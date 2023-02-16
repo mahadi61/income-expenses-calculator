@@ -35,6 +35,7 @@
                 <label class="input-group">
                   <span>Income</span>
                   <input
+                    id="income-input"
                     type="text"
                     placeholder="Enter amount"
                     class="input input-bordered h-10"
@@ -47,6 +48,7 @@
                 <label class="input-group">
                   <span>Rent</span>
                   <input
+                    id="rent-input"
                     type="text"
                     placeholder="Enter amount"
                     class="input input-bordered h-10"
@@ -58,6 +60,7 @@
                 <label class="input-group">
                   <span>Cloth</span>
                   <input
+                    id="cloth-amount"
                     type="text"
                     placeholder="Enter amount"
                     class="input input-bordered h-10"
@@ -69,6 +72,7 @@
                 <label class="input-group">
                   <span>Food</span>
                   <input
+                    id="food-amount"
                     type="text"
                     placeholder="Enter amount"
                     class="input input-bordered h-10"
@@ -78,11 +82,17 @@
               </div>
 
               <div class="text-center">
-                <button class="btn btn-wide">Calculate</button>
+                <button id="calculate-balance" class="btn btn-wide">
+                  Calculate
+                </button>
               </div>
               <div class="">
-                <h4 class="text-2xl">Total Expenses: <span>00</span></h4>
-                <h4 class="text-2xl">Balance: <span>00</span></h4>
+                <h4 class="text-2xl">
+                  Total Expenses: <span id="total-expenses">00</span>
+                </h4>
+                <h4 class="text-2xl">
+                  Balance: <span id="total-balance">00</span>
+                </h4>
               </div>
             </div>
             <div class="savings">
@@ -90,16 +100,20 @@
                 <label class="input-group input-group-sm">
                   <span>Save:</span>
                   <input
+                    id="save-percent"
                     type="text"
                     placeholder="20"
                     class="input input-bordered input-sm w-14"
                   />
                   <span>%</span>
-                  <button class="btn btn-sm">Save</button>
-                  <span class="text-2xl">Saving Amount: <span>00</span></span>
+                  <button id="save-amount" class="btn btn-sm">Save</button>
+                  <span class="text-2xl"
+                    >Saving Amount: <span id="saving-amount">00</span></span
+                  >
                 </label>
                 <span class="text-2xl text-center"
-                  >Reaming Balance: <span>00</span></span
+                  >Remaining Balance:
+                  <span id="remaining-balance">00</span></span
                 >
               </div>
             </div>
