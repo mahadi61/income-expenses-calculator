@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Income and Expenses</title>
+    <!--tailwind -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main>
+      <div
+        class="hero min-h-screen"
+        style="background-image: url(./images/money-in-jar.jpg)"
+      >
+        <div class="hero-overlay bg-opacity-60">
+          <div class="text-center">
+            <h1 class="text-5xl font-bold text-white">
+              Personal Income And Expenses Calculation
+            </h1>
+          </div>
+          <div
+            class="md:w-2/5 md:h-4/5 mt-7 ml-7 bg-base-300 rounded-box place-items-center"
+          >
+            <div class="income-expenses ml-7">
+              <h4 class="text-2xl font-bold mb-1.5 text-center">Income</h4>
+              <div class="form-control">
+                <label class="input-group">
+                  <span>Income</span>
+                  <input
+                    type="text"
+                    placeholder="Enter amount"
+                    class="input input-bordered h-10"
+                  />
+                  <span>USD</span>
+                </label>
+              </div>
+              <h4 class="text-2xl font-bold mb-1.5 text-center">Expenses</h4>
+              <div class="form-control mb-2.5">
+                <label class="input-group">
+                  <span>Rent</span>
+                  <input
+                    type="text"
+                    placeholder="Enter amount"
+                    class="input input-bordered h-10"
+                  />
+                  <span>USD</span>
+                </label>
+              </div>
+              <div class="form-control mb-2.5">
+                <label class="input-group">
+                  <span>Cloth</span>
+                  <input
+                    type="text"
+                    placeholder="Enter amount"
+                    class="input input-bordered h-10"
+                  />
+                  <span>USD</span>
+                </label>
+              </div>
+              <div class="form-control mb-2.5">
+                <label class="input-group">
+                  <span>Food</span>
+                  <input
+                    type="text"
+                    placeholder="Enter amount"
+                    class="input input-bordered h-10"
+                  />
+                  <span>USD</span>
+                </label>
+              </div>
+
+              <div class="text-center">
+                <button class="btn btn-wide">Calculate</button>
+              </div>
+              <div class="">
+                <h4 class="text-2xl">Total Expenses: <span>00</span></h4>
+                <h4 class="text-2xl">Balance: <span>00</span></h4>
+              </div>
+            </div>
+            <div class="savings">
+              <div class="form-control">
+                <label class="input-group input-group-sm">
+                  <span>Save:</span>
+                  <input
+                    type="text"
+                    placeholder="20"
+                    class="input input-bordered input-sm w-14"
+                  />
+                  <span>%</span>
+                  <button class="btn btn-sm">Save</button>
+                  <span class="text-2xl">Saving Amount: <span>00</span></span>
+                </label>
+                <span class="text-2xl text-center"
+                  >Reaming Balance: <span>00</span></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- js -->
+    <script src="./utilities.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
